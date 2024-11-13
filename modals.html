@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize CSS Modal Demo</title>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/6a79530112.js"crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body> 
+
+    <div class="divider">
+        
+    </div>
+<div class="container">
+    <h1 class="center red-text text-lighten-2">Modals</h1>
+    <div class="divider">
+        <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.</p>
+    </div>
+<br><br>
+    <!-- Modal Trigger -->
+     <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.</p>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+<br><br>
+    <!-- Modal Structure -->
+     <h3 class="red-text text-lighten-2">Modals with Button trigger</h3>
+     <p>If you prefer to use a button to open a modal specify the Modal ID in data-target rather than the href attribute. </p>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Basic Modal</h4>
+            <p>This is a basic Materialize CSS modal.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+<br>
+    <!-- Button Trigger -->
+    <button data-target="modal2" class="btn modal-trigger">Open Modal with Button</button>
+<br><br>
+    <!-- Modal Structure -->
+    <h3 class="red-text text-lighten-2">Modals with Fixed Footer</h3>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Modal with Button Trigger</h4>
+            <p>This modal was opened using a button trigger!</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <!-- Fixed Footer Modal -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Open Fixed Footer Modal</a>
+    <div id="modal3" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Fixed Footer Modal</h4>
+            <p>Notice how the footer stays fixed while you scroll through the content.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div><br><br>
+    <p>If you have content that is very long and you want the action buttons to be visible all the time, you can add the modal-fixed-footer class to the modal. </p>
+    <!-- Bottom Sheet Modal -->
+     <h3 class="red-text text-lighten-2">Bottom Sheet Modals</h3>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal4">Open Bottom Sheet Modal</a>
+    <div id="modal4" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Bottom Sheet Modal</h4>
+            <p>This is a bottom sheet modal.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+</div>
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize all modals
+        var elems = document.querySelectorAll('.modal');
+        M.Modal.init(elems, {
+            opacity: 0.9,             // Change overlay opacity
+            inDuration: 300,          // Transition in duration
+            outDuration: 200,         // Transition out duration
+            dismissible: true,        // Allow close by clicking outside
+            startingTop: '10%',       // Starting top offset
+            endingTop: '20%'          // Ending top offset
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+    background-color: #5a3e85;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.header h1 {
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 3rem;
+}
+
+/* Main Content Styling */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #5a3e85;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Product Sections */
+.bestsellers .products {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bestsellers .product {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.bestsellers .product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.promotion {
+    text-align: center;
+    background-color: #f5e8ff;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #5a3e85;
+}
+
+/* Call-to-Action Button */
+.cta .btn {
+    display: inline-block;
+    background-color: #5a3e85;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #7046a3;
+}
+
+/* Product Listing */
+.product-listing {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-listing button {
+    background-color: #5a3e85;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-listing button:hover {
+    background-color: #7046a3;
+}
+
+/* Adoption Profiles */
+.adoption-profile {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #5a3e85;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #e0b0ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+/* Buttons and Forms */
+button, input[type="submit"] {
+    background-color: #5a3e85;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #7046a3;
+}
+
+input[type="email"], input[type="text"], textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: #5a3e85;
+}
+
+/* parallax codes */
+/* Custom styles for Parallax Demo */
+.nav-wrapper {
+    padding: 0 20px;
+}
+
+.parallax-container {
+    height: 400px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+footer.page-footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* footer code */
+/* Footer Styling */
+.footer {
+    background-color: #5a3e85;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer-content div {
+    margin: 10px 0;
+}
+
+.footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #e0b0ff;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer ul li a {
+    color: #e0b0ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.newsletter button {
+    padding: 8px 15px;
+    background-color: #e0b0ff;
+    color: #5a3e85;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #fff;
+    color: #5a3e85;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
